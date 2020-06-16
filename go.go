@@ -6,8 +6,8 @@ import (
 )
 
 // IsOdd returns true if the number is odd WITHOUT USING THE %
-func IsOdd(num float64) bool {
-	num = num / 2
+func IsOdd(n int) bool {
+	var num float64 = float64(n) / 2
 
 	n1, _ := strconv.ParseFloat(fmt.Sprintf("%f", num), 64)
 	n2, _ := strconv.ParseFloat(fmt.Sprintf("%.0f", num), 64)
